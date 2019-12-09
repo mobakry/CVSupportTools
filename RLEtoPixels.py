@@ -1,4 +1,5 @@
 '''
+Using Format: python RLEtoPixels.py path\to\RLEFormat.csv class_name image_size(eg:768*768) path\to\out.csv
 A function convert the Airbus ship detection challenge data to a standard CSV bounding box format.
 The Airbus data is in run-length encoding format. We want a bounding box for each ship in our format.
 If an image has no ships in it, it still gets a row in our CSV, but x0,y0,x1,y1, and class are empty.
