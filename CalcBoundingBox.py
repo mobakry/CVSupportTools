@@ -31,8 +31,8 @@ def calc_BounBox(path,Class_name):
 	for r,d,f in os.walk(path):
 		for image in f:
 			if image.endswith(('.jpg', '.png', '.ttif')):
-				image_names.append(path+image)
-				img = cv2.imread(path+image)
+				image_names.append(os.path.join(path,image))
+				img = cv2.imread(os.path.join(path,image))
 				
 				ret, threshed_img = cv2.threshold(cv2.cvtColor(img, cv2.COLOR_BGR2GRAY),
 		            127, 255,0)
