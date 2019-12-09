@@ -1,10 +1,17 @@
 '''
+Functionality:
+
 The programm takes in image masks and calculates the bounding box around the masked portion.
-In annotations folder you will see an annotations_example.csv that shows you common format for recording bounding boxes.
-In this folder is also a folder called masks. Each of the images is black except for a white masked area. It is these white mask areas
+In folder called masks you will find black and white images. It is these white mask areas
 we are going to to calculate the smallest containing bounding box for.
 
-
+Inputs:
+ str imagesPath : the root path to a directory full of image masks
+ str Class 	: the object class name
+ 
+ 
+to run the function
+python CalcBoundingBox.py path/to/images class_name
 '''
 
 import cv2
