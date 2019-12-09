@@ -1,1 +1,1 @@
-Data
+Annotation file in RLE format and the corresponing samples from the Airbus ship detection challenge data. you can use this data to test each of 'CalcBoundingBox', 'CalcBoundingBox' and 'RLEtoPixels' functions.
