@@ -13,6 +13,7 @@ str imagesPath (which is the root path to a directory full of images and subdire
 
 str outputFile (which is the output CSV file name)
 
+"To test the code you can use the annotation file and the images from the Airbus_ship directory"
 to run the function
 python PruneAnnotationFile.py path/to/annotations.csv path/to/ImagesDir out.csv
 
