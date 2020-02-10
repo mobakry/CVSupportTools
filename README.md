@@ -1,2 +1,2 @@
-# CVSupportTools
+# SupportTools
 Computer Vision support tools
