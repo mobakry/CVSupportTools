@@ -1,3 +1,12 @@
+'''
+This code composes two files as a foreground and background audios
+to use this write this command on your cmd:
+python composite.py path\to\FGfiles path\to\BGfiles path\to\outputs FilesNumber
+
+p.s: you can use sample files in background and foreground folders
+
+'''
+
 import scaper
 import numpy as np
 import os
@@ -5,7 +14,7 @@ import argparse
 
 parser = argparse.ArgumentParser(description='')
 
-parser.add_argument("FilesPath", type=str, help="A directory of foreground folders(eg: Gunshot sounds)")
+parser.add_argument("FilesPath", type=str, help="A directory of foreground folders")
 parser.add_argument("BackGround", type=str, help="A deirectory of background folders")
 parser.add_argument("OutPath", type=str, help="A directory to store output files")
 parser.add_argument("Nfiles",type=int, help="Numer of out files")
